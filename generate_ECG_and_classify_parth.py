@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from CNN_model_parth import get_1DCNN
 from tensorflow.keras.utils import to_categorical
 # load model
-model = load_model("./save_model/gen_30000.h5")
+model = load_model("./save_model/gen_20000.h5")
 
 def generate_latent_points(latent_dim, n_samples):
     # generate points in the latent space

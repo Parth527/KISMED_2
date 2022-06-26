@@ -41,7 +41,7 @@ def predict_labels(ecg_leads : List[np.ndarray], fs : float, ecg_names : List[st
     '''
 
 # Euer Code ab hier  
-    model = load_model('1DCNN_best_model.h5')
+    model = load_model('1DCNN_best_model_20K_16_85.h5')
     predictions = list()
     dataloader = DataLoader()
     for ecg_name, ecg in zip(ecg_names, ecg_leads):
